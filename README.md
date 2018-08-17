@@ -1,4 +1,4 @@
-# Personal projects HTML/CSS/JS
+# Personal projects HTML5/CSS3/JS
 
 Responsive Web Design with CreeCodeCamp projects
 
