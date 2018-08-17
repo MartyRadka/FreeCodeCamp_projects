@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+
+  </head>
+  <body>
+    <div class="main"><!-- begin main -->
+      <div class="main-content"><!--begin main-content-->
+        <header>
+          <i class="fas fa-coffee big-icons"></i>
+          <h1 id="title">Fajn Cafe<div>Do you like our coffee&nbsp;?</div></h1>
+          <p class="infobox" id="description">We aim to provide our customers with the great coffee and efficient service. Please take 5 minutes to complete our survey and help us to be the best Cafe in your town. You have 1 coffee <em>FREE</em> for answering.</p>
+        </header>
+
+        <form action="./script" method="post" enctype="multipart/form-data" autocomplete="on" id="survey-form">
+          <div class="form-item">
+            <label class="label-main" for="radio-visit">How often do you visit Fajn Cafe&nbsp;? *</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="radio-visit" id="radio-visit" value="daily" required />
+                  Daily
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="radio-visit" value="weekly" checked />
+                  Weekly
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="radio-visit" value="twice a week" />
+                  Twice a week
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="radio-visit" value="monthly" />
+                  Monthly
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item">
+            <label class="label-main">Do you like a taste of our coffees&nbsp;? *</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="service" value="very good" required checked/>
+                  Very tasty and strong
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="service" value="good" />
+                  Tasty but weak
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="service" value="average" />
+                  Average
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="service" value="bad" />
+                  It can be better if it's well done
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="service" value="very bad" />
+                  Not good at all
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item">
+            <label class="label-main">How do you rate the cleanliness&nbsp;? *</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="cleanliness" value="very good" required checked/>
+                  Very good
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="cleanliness" value="good" />
+                  Good
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="cleanliness" value="average" />
+                  Average
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="cleanliness" value="bad" />
+                  Bad
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="cleanliness" value="very bad" />
+                  Very bad
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item">
+            <label class="label-main">How do you rate the quality of service&nbsp;? *</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="quality of service" value="very good" required checked/>
+                  Very good
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="quality of service" value="good" />
+                  Good
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="quality of service" value="average" />
+                  Average
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="quality of service" value="bad" />
+                  Bad
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="quality of service" value="very bad" />
+                  Very bad
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item">
+            <label class="label-main">How do you rate the menu&nbsp;? *</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="menu" value="very good" required checked/>
+                  Very good, great choices
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="menu" value="good" />
+                  Good, but you can have more choices
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="menu" value="average" />
+                  Average
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="menu" value="bad" />
+                  Not good and not enought choices
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="menu" value="very bad" />
+                  Not good at all
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item">
+            <label class="label-main">Which coffee do you prefer&nbsp;?</label>
+            <select id="dropdown">
+              <option>Espresso</option>
+              <option>Lungo</option>
+              <option>Americano</option>
+              <option>Machiato</option>
+              <option>Cappuccino</option>
+              <option>Flat white</option>
+              <option>Caffé latte</option>
+              <option>Frappé</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label class="label-main" for="choice">What did you choose the last time&nbsp;?</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="choice" id="choice" value="coffee" />
+                  Coffee
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="choice" value="other hot drink" />
+                  Other hot drink
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="choice" value="wine" />
+                  Wine
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="choice" value="cake" />
+                  Cake
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="choice" value="sandwich" />
+                  Sandwich
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item last">
+            <label class="label-main">Are there any comments that you would like to make&nbsp;?</label>
+            <textarea name="comment" maxlength="150" placeholder="...would you like to write something for us?"></textarea>
+          </div>
+          <h2>Something about you</h2>
+          <div class="form-item">
+            <label class="label-main" for="title">Title</label>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="title" id="title" value="mr" />
+                  Mr
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="title" value="mrs" />
+                  Mrs
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="title" value="miss" />
+                  Miss
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-item">
+            <label class="label-main" id="name-label">First name</label>
+            <input type="text" name="first_name" placeholder="Mary-Jane" required id="name" />
+          </div>
+          <div class="form-item">
+            <label class="label-main" id="number-label">Age</label>
+            <input type="number" name="age" min="1" max="100" placeholder="Age" id="number" />
+          </div>
+          <div class="form-item">
+            <label class="label-main" id="email-label">Email *</label>
+            <input type="email" name="email" placeholder="maryjane@gmail.com" required id="email" />
+          </div>
+          <div class="form-item last">
+            <label class="label-main">Phone number</label>
+            <input type="tel" name="phone" placeholder="(+420) 000 000 000" pattern="(\+420)? ?\d{3} ?\d{3} ?\d{3}"/>
+          </div>
+          <div class="btn-group">
+            <button class="btn-reset" type="reset" name="reset_button" value="reset">
+              Reset
+            </button>
+            <button class="btn-submit" type="submit" name="submit_button" value="submit" id="submit">
+              Submit
+            </button>
+          </div><!-- end main -->
+        </div><!--end main-content-->
+        <footer>
+          <div class="logo">
+            <i class="fas fa-coffee small-icons"></i>
+            <h3>Fajn Cafe</h3>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f small-icons"></i></a>
+            <a href="#"><i class="fab fa-twitter small-icons"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g small-icons"></i></a>
+            <a href="#"><i class="fab fa-instagram small-icons"></i></a>
+          </div>
+        </footer>
+      </form>
+    </div><!-- end main -->
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  </body>
+</html>

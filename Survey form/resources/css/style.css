@@ -1,0 +1,221 @@
+/* -- LAYOUT -- */
+
+body {
+  background-image: url(img/james-sutton-221034-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Roboto, Arial, sans-serif;
+  color: #222;
+  line-height: 140%;
+}
+
+.main {
+  background: rgba(255, 254, 254, 0.7);
+  /*width: 60%;*/
+  width: 450px;
+  height: calc(100vh - 80px);
+  margin: 40px auto;
+  box-shadow: 0 0 15px #000;
+  overflow: auto;
+}
+
+.main-content {
+  padding: 20px 40px;
+}
+
+/* -- TYPOGRAPHY -- */
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h1 div {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.infobox {
+  font-size: 0.85rem;
+  margin: 15px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #d4d4d4;
+}
+
+/* -- ICONS -- */
+
+.big-icons {
+  font-size: 5rem;
+  color: #321a09;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.small-icons {
+  margin-right: 10px;
+  color: #d78d8d;
+  transition: color 0.3s;
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-google-plus-g:hover {
+  color: #dd4b39;
+}
+
+.fa-instagram:hover {
+  color: #e95950;
+}
+
+/* -- form-item -- */
+
+.form-item {
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.form-item.last {
+  border-bottom: none;
+}
+
+.radio-rate {
+  display: flex;
+}
+
+/* -- labels -- */
+.label-main {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+}
+
+.radio-rate label {
+  width: 160px;
+}
+
+/* -- imputs -- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px #d4d4d4;
+  line-height: 20px;
+  height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input {
+  margin-right: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+::-webkit-input-placeholder {
+  /*color: #edcccc;*/
+  color: #bbbbbb;
+  font-size: 0.8rem;
+}
+
+/* -- buttons -- */
+
+.btn-group {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 35px;
+  border-radius: calc(35px / 2);
+  font-size: 0.9rem;
+}
+
+.btn-submit {
+  background: #e4b3b3;
+  margin-left: 40px;
+  border: 1px solid #e4b3b3;
+}
+
+.btn-reset {
+  background-color: #fff;
+  box-shadow: 0 0 4px #e4b3b3;
+}
+
+/* -- FOOTER -- */
+
+footer {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: rgb(250, 242, 242);
+  font-size: 1.2rem;
+}
+
+.logo {
+  color: #d78d8d;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    width: 90%;
+  }
+  footer {
+    justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+  .big-icons {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  button {
+    width: 80px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .btn-submit {
+    margin-left: 15px;
+  }
+}

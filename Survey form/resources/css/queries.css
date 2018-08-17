@@ -1,0 +1,135 @@
+/* Big tablets to 1180px */
+
+/*@media only screen and (max-width: 1180px) {
+  .form-item {
+    width: 45%;
+    max-width: 340px;
+    display: block;
+  }
+  .form-item ul,
+  select,
+  textarea {
+    margin-top: 10px;
+  }
+  label {
+    margin-right: 15px;
+  }
+  textarea {
+    width: 100%;
+  }
+  input {
+    margin-right: 6px;
+  }
+  .infobox {
+    width: 80%;
+  }
+}*/
+
+/* From 611px to 990px */
+
+/*@media only screen and (max-width: 990px) {
+  .main {
+    width: 80%;
+  }
+  .form-item {
+    width: 55%;
+  }
+  .big-icons {
+    font-size: 4.5rem;
+  }
+  h1 {
+    font-size: 2.3rem;
+    padding: 10px;
+  }
+  .infobox {
+    width: 85%;
+    font-size: 0.85rem;
+  }
+}*/
+
+/* From 501px to 610px */
+
+/*@media only screen and (max-width: 610px) {
+  .main {
+    width: 80%;
+  }
+  .form-item {
+    width: 65%;
+  }
+}*/
+
+/* From 401px to 500px */
+
+/*@media only screen and (max-width: 500px) {
+  .main {
+    width: 85%;
+  }
+  .form-item {
+    width: 73%;
+  }
+  .big-icons {
+    font-size: 4.1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 6px;
+  }
+  h2 {
+    padding: 20px;
+  }
+  .infobox {
+    width: 90%;
+    font-size: 0.85rem;
+    margin: 10px auto;
+    padding: 15px;
+  }
+  select {
+    display: block;
+  }
+  footer {
+    justify-content: space-between;
+  }
+}*/
+
+/* Smaller phone that 400px */
+
+/* @media only screen and (max-width: 400px) {
+  .big-icons {
+    font-size: 3.8rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    padding: 10px;
+  }
+  header p {
+    padding: 7px;
+    font-size: 0.75rem;
+    width: 93%;
+  }
+  form {
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  .btn-group {
+    width: 100%;
+  }
+  button {
+    width: 90px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .btn-submit {
+    margin-left: 10px;
+  }
+  .radio-rate {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+}*/
